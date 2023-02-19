@@ -5,34 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ca911ca-7852-47f2-987d-e8d4f0d602c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SDE_Program.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/GameFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/console/ConsoleReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/console/ConsoleWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/console/Waiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/factories/Encounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/factories/NegativeEncounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/factories/PositiveEncounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/items/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/items/NegativeItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/items/PositiveItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/people/NegativePerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/people/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/people/PositivePerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/states/CreatorState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/states/EncounterEndState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/states/EncounterState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/states/GameContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/states/InfoState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/program/states/MenuState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Abstract_factory.drawio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/program/states/EncounterState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/program/states/EncounterState.java" afterDir="false" />
+    </list>
+    <list id="a8ea4b64-2d46-468c-98a4-57d701819ad1" name="Changes by danyl" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/program/states/CreatorState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/program/states/CreatorState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/program/states/InfoState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/program/states/InfoState.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +30,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/README.md">
+      <ranges>
+        <range start1="11" end1="12" start2="11" end2="12" changelist="a8ea4b64-2d46-468c-98a4-57d701819ad1" />
+        <range start1="14" end1="15" start2="14" end2="15" changelist="a8ea4b64-2d46-468c-98a4-57d701819ad1" />
+        <range start1="16" end1="16" start2="16" end2="19" changelist="9ca911ca-7852-47f2-987d-e8d4f0d602c4" />
+        <range start1="34" end1="35" start2="37" end2="38" changelist="a8ea4b64-2d46-468c-98a4-57d701819ad1" />
+        <range start1="40" end1="41" start2="43" end2="44" changelist="a8ea4b64-2d46-468c-98a4-57d701819ad1" />
+        <range start1="42" end1="43" start2="45" end2="46" changelist="a8ea4b64-2d46-468c-98a4-57d701819ad1" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -118,7 +111,7 @@
       <updated>1676642819535</updated>
       <workItem from="1676642820677" duration="38055000" />
       <workItem from="1676815042298" duration="2881000" />
-      <workItem from="1676817959023" duration="19227000" />
+      <workItem from="1676817959023" duration="21959000" />
     </task>
     <servers />
   </component>

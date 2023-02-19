@@ -79,8 +79,10 @@ public class CreatorState implements State {
         while (true) {
             Waiter.waitMiddle();
             writer.write("How old would you like to be?");
-            int age = Integer.parseInt(reader.readLine());
-            if (age < 0) {
+            // needs to give an 'else', when string is given
+            try {
+                int age = Integer.parseInt(reader.readLine());
+                if (age < 0) {
                 writer.write("I don't think you can go on a quest from inside your mom's womb. How are you even typing?");
             } else if (age >= 0 && age < 9) {
                 writer.write("Sorry, no pants-wetters allowed.");
@@ -101,10 +103,12 @@ public class CreatorState implements State {
                 this.character.add(String.valueOf(age));
                 break;
             } else if (age >= 80) {
-                writer.write("Something about old people being wise. We'll see whether or not that proverb is true.");
-                this.character.add(String.valueOf(age));
-                break;
-            } else {
+                    writer.write("Something about old people being wise. We'll see whether or not that proverb is true.");
+                    this.character.add(String.valueOf(age));
+                    break;
+                }
+            // catches string, returns message
+            } catch (NumberFormatException e) {
                 writer.write("I don't think you did what I asked. Just a number, please.");
             }
         }
@@ -185,8 +189,9 @@ public class CreatorState implements State {
         Waiter.waitMiddle();
         while (true) {
             writer.write("How tall, or short, would you like to be? In centimeters.");
-            int height = Integer.parseInt(reader.readLine());
-            if (height <= 0) {
+            try {
+                int height = Integer.parseInt(reader.readLine());
+                if (height <= 0) {
                 writer.write("You can't exactly go on a quest if you're, well.. not there.");
             } else if (height > 0 && height < 90) {
                 writer.write("Yeah, no, that's not going to work, sorry. Maybe try some growth hormones and come back later.");
@@ -207,9 +212,10 @@ public class CreatorState implements State {
                 this.character.add(String.valueOf(height));
                 break;
             } else if (height >= 325) {
-                writer.write("Don't you think that's a tad bit too much? You won't fit anywhere.");
-            } else {
-                writer.write("Didn't I already tell you your height was in centimeters? Just a number and no fancy extras, please.");
+                    writer.write("Don't you think that's a tad bit too much? You won't fit anywhere.");
+                }
+            } catch (NumberFormatException e) {
+                writer.write("Didn't I already tell you your height was in centimeters? Just input a number without any fancy extras, please.");
             }
         }
         this.setFingers();
@@ -221,8 +227,9 @@ public class CreatorState implements State {
         Waiter.waitMiddle();
         while (true) {
             writer.write("How many fingers, in total, would make you the happiest?");
-            int fingers = Integer.parseInt(reader.readLine());
-            if (fingers < 0) {
+            try {
+                int fingers = Integer.parseInt(reader.readLine());
+                if (fingers < 0) {
                 writer.write("What do you think that looks like? It's impossible.");
             } else if (fingers == 0) {
                 writer.write("New nickname \"Stumpy\" achieved.");
@@ -242,9 +249,10 @@ public class CreatorState implements State {
                 this.character.add(String.valueOf(fingers));
                 break;
             } else if (fingers >= 21) {
-                writer.write("That's a crazy amount of fingers.");
-                writer.write("Where are you going to put all those fingers? They're still supposed to fit on your hands.");
-            } else {
+                    writer.write("That's a crazy amount of fingers.");
+                    writer.write("Where are you going to put all those fingers? They're still supposed to fit on your hands.");
+                }
+            } catch (NumberFormatException e) {
                 writer.write("I don't know why you thought that answer was going to work, but I just want a number, please.");
             }
         }
@@ -286,7 +294,7 @@ public class CreatorState implements State {
         writer.write("| Name: " + this.character.get(0));
         writer.write("| Age: " + this.character.get(1));
         writer.write("| Class: " + this.character.get(2));
-        writer.write("|                              |");
+        writer.write("|                                   |");
         writer.write("| Species: " + this.character.get(3));
         writer.write("| Height: " + this.character.get(4));
         writer.write("| Number of fingers: " + this.character.get(5));

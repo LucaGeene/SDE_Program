@@ -9,11 +9,14 @@ A program written for assignment 3 for SDE.
  
  
  ### Design patterns
- Abstract factory (creational pattern)
+ Abstract factory (Creational pattern)
  
  De Abstract factory is gebruikt om een combinatie van encounters te maken. Zo is elke ervaring in het spel uniek. 
- Het hoeft alleen een encounter call aan te maken, waarna alle attributes van dat encounter (of het een enemy is, een NPC, een item, etc. plus alle details van voorgenoemde) willekeurig aangemaakt wordt.
+ Het hoeft alleen een encounter call aan te maken, waarna alle attributes van die encounter (of het een enemy is, een NPC, een item, etc. plus alle details van voorgenoemde) willekeurig aangemaakt worden.
 (Helaas is dit niet op tijd gelukt, en dus een WIP. Maar, het staat er wel.)
+
+![Een diagram van logica Abstract factory](Abstract_factory.drawio.png "Diagram Abstract Factory")
+
 
 Betrokken bestanden:
 #### factories
@@ -32,15 +35,15 @@ Betrokken bestanden:
 
 Facade (Structural pattern)
 
-Er is een facade gebruikt voor het versimpelen van de interactie tussen classes en interfaces.
+Er is een Facade gebruikt voor het versimpelen van de interactie tussen classes en interfaces.
 
 Betrokken bestanden:
 - GameFacade
 
 
-State (behavioral pattern)
+State (Behavioral pattern)
 
-De States zijn gebruikt om de verschillende behaviours van de game gescheiden te houden. Zo kan er ook niet verschillende processen door elkaar uitgevoerd worden. 
+De States zijn gebruikt om de verschillende behaviours van de game gescheiden te houden. Zo kunnen er ook geen verschillende processen door elkaar uitgevoerd worden. 
 Afhankelijk van wat de speler wilt, verandert het naar een specifieke State.
 Betrokken bestanden:
 - CreatorState

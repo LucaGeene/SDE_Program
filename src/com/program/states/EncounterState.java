@@ -37,9 +37,11 @@ public class EncounterState implements State {
         System.out.flush();
 
         Waiter.waitMiddle();
-        writer.write("Lets see whats out there for you...");
+        writer.write("To be honest, this sadly doesn't work quite yet. I won't implement a (I know, MAIN) feature that could only be slightly functional.");
+        Waiter.waitLong();
+        writer.write("Sooo.. back to the menu you go. :(");
 
-        this.getEncounter();
+        this.gameFacade.menuState(character, characterstats);
 
     }
 

@@ -34,7 +34,7 @@ public class InfoState implements State {
         writer.write("| Name: " + this.character.get(0));
         writer.write("| Age: " + this.character.get(1));
         writer.write("| Class: " + this.character.get(2));
-        writer.write("|                              |");
+        writer.write("|                                   |");
         writer.write("| Species: " + this.character.get(3));
         writer.write("| Height: " + this.character.get(4));
         writer.write("| Number of fingers: " + this.character.get(5));
